@@ -3,6 +3,7 @@ function isValidShift(hours) {
 }
 
 function calculatePay(hours, hourlyRate) {
+  if (hours <= 0) return 0;
   const regularHoursLimit = 8;
   let totalPay;
   if (hours <= regularHoursLimit) {
